@@ -1,4 +1,4 @@
-# Whiteboarding
+# Technical Interviewing & Whiteboarding
 
 ## Prep
 
@@ -7,6 +7,13 @@
 * Recruiters or HR people
 * Avoid foreign recruiters
 * What is the recruiters relationship with the decision maker
+* How close is their relationship with the company
+* Have you placed people here
+* Ask about names of team leads
+* Want to know the tech and culture of the:
+  * Team
+  * Company
+  * Decision maker
 
 ## Assessments
 
