@@ -1,6 +1,6 @@
 # Create a JSON service in Spring-boot
 
-modified for git/github lesson
+modified for git/github lesson - by Greg Doud
 
 These instructors where written on or about October 3, 2018.
 
