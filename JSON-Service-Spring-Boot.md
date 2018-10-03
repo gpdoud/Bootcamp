@@ -1,8 +1,24 @@
 # Create a JSON service in Spring-boot
 
+These instructors where written on or about October 3, 2018.
+
+These are the instructions for creating the back-end json service using Java, Eclipse, and Spring tools.
+
 ## Install STS version of Eclipse from Spring.io
 
+For students that don't have Eclipse installed, it is best to install Eclipse with the Spring tools already installed and configured. That can be downloaded from:
+
+(Eclipse with Spring tools)<https://spring.io/tools>
+
+For those students that already have Eclipse installed, Spring tools can be added to the existing Eclipse instance. The following instructions are from the Eclipse site <https://www.eclipse.org/community/eclipse_newsletter/2018/february/springboot.php>
+
+_You can install the Spring Tools for Eclipse IDE into an existing Eclipse installation using the Eclipse Marketplace. Just open the marketplace client in Eclipse, search for Spring Tools and install the “Spring Tools (aka Spring IDE and Spring Tool Suite)” entry._
+
 ## Create new project > Other > Spring Starter Project
+
+To create the project, select *File > New > Other*. Scroll down to find *Spring Boot* folder. Select *Spring Starter Project*.
+
+## Configure the project
 
 ## Include JPA, Web, MySql
 
