@@ -1,5 +1,7 @@
 # Create a JSON service in Spring-boot
 
+modified for git/github lesson - by Greg Doud
+
 These instructors where written on or about October 3, 2018.
 
 These are the instructions for creating the back-end json service using Java, Eclipse, and Spring tools.
