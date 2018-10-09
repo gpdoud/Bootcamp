@@ -37,3 +37,13 @@ This page is likely to be long. As such, you should consider using hyperlinks (<
 * "Hello, world!"
 * Data Types (like int, string, date, etc.)
 * Control constructs (if, while, for, etc.)
+
+### Email for feedback
+
+This page allows a user to provide feedback on your site by filling out a form with their:
+
+* Email address
+* Feedback text
+* Button to submit
+
+The page doesn't actually send any emails.
