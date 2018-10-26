@@ -2,15 +2,21 @@
 
 This assignment is to create a display of your favorite restaurants using Typescript.
 
+## Purpose
+
+The purpose of this assignment is to determine if some additional Typescript learning is required. You should demonstrate your knowledge by using all the Typescript-specific features like the classes, strong typing of variables, properties, and functions.
+
 ## Requirements
 
 1. All code must be Typescript.
-2. Create a source file for a class 'Restaurants' containing:
+
+2. Create a source file named 'restaurant.class.ts' for a class 'Restaurant' containing:
     * A property: Id (integer)
     * A property: Name (string)
     * A property: Recommended (boolean)
     * A constructor to initialize all properties
     * A method called print() that will display all fields via a call to 'console.log()'
+    
 3. Create a source file for a class 'Mainline'. It should create an array of Restaurant instances from the following data:
 <table>
   <tr><th>Id</th><th>Name</th><th>Recommended</th><th>Phone</th></tr>
