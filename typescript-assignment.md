@@ -17,7 +17,7 @@ The purpose of this assignment is to determine if some additional Typescript lea
     * A constructor to initialize all properties
     * A method called print() that will display all fields via a call to 'console.log()'
     
-3. Create a source file for a class 'Mainline'. It should create an array of Restaurant instances from the following data:
+3. Create a source file named 'mainline.ts'. It should begin by creating an array of Restaurant instances from the following data:
 <table>
   <tr><th>Id</th><th>Name</th><th>Recommended</th><th>Phone</th></tr>
   <tr><td>1</td><td>Rusty Bucket</td><td>true</td><td>111-1111</td></tr>
@@ -27,14 +27,14 @@ The purpose of this assignment is to determine if some additional Typescript lea
   <tr><td>5</td><td>Skyline</td><td>false</td><td>555-5555</td></tr>
 </table>
 
-4. Iterate through the array calling 'print()' for each to display all data for each restaurant
+4. After the array is created, it should iterate through the array calling the 'print()' for each restaurant instance to display all data for each restaurant
 
 5. Transpile the Typescript files
 
-6. Execute by calling 'node Mainline.js'
+6. Execute by calling 'node mainline.js'
 
 ## Submitting the assignment
 
 Use Git to make the project a repository. Stage, commit, and push to a GitHub repository. Slack the .git url via the class Slack channel.
 
-I will clone your repository to my machine. I'll transpile the two source files and run 'node Mainline.js' to review the output.
+I will clone your repository to my machine. I'll transpile the two source files and run 'node mainline.js' to review the output.
