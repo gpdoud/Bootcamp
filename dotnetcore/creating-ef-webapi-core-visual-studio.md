@@ -116,7 +116,7 @@ The controller contains the code to execute when calls are made to the server. V
 2. [GET] /api/users/5 - Retrieves the user with the primary key of 5
 3. [POST] /api/users - Adds the user instance (passed in the body of the request)
 4. [PUT] /api/Users/5 - Updates the user with the primary key of 5 (passed in the body of the request)
-5. [DELETE] /api/Users/5 - Removes the user with primary key of 5
+5. [DELETE] /api/users/5 - Removes the user with primary key of 5
 
 Right click on Controllers in Solution Explorer and select ADD > Controller
 
