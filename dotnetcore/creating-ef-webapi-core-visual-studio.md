@@ -102,4 +102,29 @@ add-migration ".."
 update-database
 ```
 
+If the add-migration displays a yellow warning to upgrade from 2.1.1 to 2.1.4, execute this command:
+
+```
+install-package Microsoft.EntityFrameworkCore.Tools -version 2.1.4
+```
+
 ## Add Controller (w/EF)
+
+The controller contains the code to execute when calls are made to the server. VS can generate very good template code especially for EntityFramework and WebApi. Each controller should be generated for the template code. The template code contains five methods (the examples assume the controller is users):
+
+1. [GET] /api/users - Retrieves all users
+2. [GET] /api/users/5 - Retrieves the user with the primary key of 5
+3. [POST] /api/users - Adds the user instance (passed in the body of the request)
+4. [PUT] /api/Users/5 - Updates the user with the primary key of 5 (passed in the body of the request)
+5. [DELETE] /api/Users/5 - Removes the user with primary key of 5
+
+Right click on Controllers in Solution Explorer and select ADD > Controller
+
+From the dialog, select API Controller with actions, using Entity Framework.
+
+From the next dialog, in the Model class, select one of the class in the Models folder
+
+In the Data context class, select the AppDbContext class
+
+The name in the Controller name textbox will be automatically generated. It can be changed, but should reflect the plural version of the model picked in the top dropdown list.
+
