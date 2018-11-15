@@ -34,6 +34,8 @@ Back to the New ASP.NET Core Web Application, Click OK.
 
 Open the Package Manager Console.
 
+Add support for SQL Server.
+
 At PM> type `install-package Microsoft.EntityFrameworkCore.SqlServer` and enter.
 
 ```
@@ -56,6 +58,20 @@ Successfully installed 'Microsoft.EntityFrameworkCore.SqlServer 2.1.4' to WebApi
 Successfully installed 'System.Diagnostics.DiagnosticSource 4.5.1' to WebApiEfCoreProject
 Executing nuget actions took 629.28 ms
 Time Elapsed: 00:00:04.8226450
+```
+
+Add support for disabling CORS (needed for testing with Angular)
+
+Ap PM> type `install-package Microsoft.AspNetCore.Cors`
+
+```
+Restoring packages for C:\repos\dotnetcore\vs\TestingLogRepository\TestingLogRepository\TestingLogRepository.csproj...
+Installing NuGet package Microsoft.AspNetCore.Cors 2.1.1.
+Committing restore...
+Writing lock file to disk. Path: C:\repos\dotnetcore\vs\TestingLogRepository\TestingLogRepository\obj\project.assets.json
+Restore completed in 452.43 ms for C:\repos\dotnetcore\vs\TestingLogRepository\TestingLogRepository\TestingLogRepository.csproj.
+Executing nuget actions took 1.01 sec
+Time Elapsed: 00:00:01.8329104
 ```
 
 _Note: It is possible that the version numbers may be different._
@@ -89,8 +105,17 @@ public AppDbContext : DbContext {
 In ConfigureServices()
 
 ```
+    // add SQL Server support
     var connection = @"server=localhost\sqlexpress;database=[xxx];trusted_connection=true;";
     services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(connection));
+
+    // allows access from any client
+    services.AddCors(options => {
+        options.AddPolicy("AllowAnyOrigin",
+            builder => builder.AllowAnyHeader()
+                                .AllowAnyOrigin()
+                                .AllowAnyMethod());
+    });    
 ```
 
 ## Add migration and create database
@@ -128,3 +153,8 @@ In the Data context class, select the AppDbContext class
 
 The name in the Controller name textbox will be automatically generated. It can be changed, but should reflect the plural version of the model picked in the top dropdown list.
 
+Add the EnableCores attribute with the policy create in Startup.cs
+
+```
+[EnableCors("AllowAnyOrigin")]
+```
