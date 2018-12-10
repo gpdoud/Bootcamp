@@ -16,6 +16,6 @@ given and the accumulated number separated by a comma.
 
 ## Example
 
-Integer given: 10
-Numbers included in accumulation: 3 + 5 + 6 + 9 = 23
-Console output: 10, 23
+* Integer given: 10
+* Numbers included in accumulation: 3 + 5 + 6 + 9 = 23
+* Console output: 10, 23
