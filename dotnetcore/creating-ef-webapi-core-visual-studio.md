@@ -102,20 +102,23 @@ public AppDbContext : DbContext {
 
 ## Modify Startup.cs
 
-In ConfigureServices()
+In ConfigureServices(..)
 
 ```
     // add SQL Server support
     var connection = @"server=localhost\sqlexpress;database=[xxx];trusted_connection=true;";
     services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(connection));
 
-    // allows access from any client
-    services.AddCors(options => {
-        options.AddPolicy("AllowAnyOrigin",
-            builder => builder.AllowAnyHeader()
-                                .AllowAnyOrigin()
-                                .AllowAnyMethod());
-    });    
+    // enable CORS support
+    services.AddCors();   
+    services.AddMvc();
+```
+
+In Configure(..)
+
+```
+   app.UseCors(opt => opt.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod().AllowCredentials());
+   app.UseMvc();
 ```
 
 ## Add migration and create database
