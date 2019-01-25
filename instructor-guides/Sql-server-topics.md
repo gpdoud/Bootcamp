@@ -33,7 +33,64 @@
         * COMMIT { TRANSACTION {name} }
 
 * DDL
-    * create table
+    * create table tablename (..)
+    * columns
+        * columnname
+        * types: int, nvarchar, datetime, bit
+        * nullable
+        * default
+        * unique
+        * identity(start, increment)
+        * primary key
+        * foreign key references tablename.column
+            on [delete, update] { **no action** | cascade | set null | set default }
+        * check ( expression ) // col < val
+
+* PRS
+    * Users
+        * Username nvarchar(30) not null unique
+        * Password nvarchar(30) not null
+        * Firstname nvarchar(30) not null
+        * Lastname nvarchar(30) not null
+        * Phone nvarchar(12)
+        * Email nvarchar(255)
+        * IsReviewer bit not null default 0
+        * IsAdmin bit not null default 0
+        * Active bit not null default 1
+    * Vendors
+        * Code nvarchar(4) not null unique
+        * Name nvarchar(50) not null
+        * Address nvarchar(30)
+        * City nvarchar(30)
+        * State nchar(2)
+        * Zip nvarchar(10)
+        * Phone nvarchar(12)
+        * Email nvarchar(255)
+        * IsPreferred bit not null default 1
+        * Active bit not null default 1
+    * Products
+        * VendorId int not null
+        * PartNumber nvarchar(30) not null
+        * Name nvarchar(30) not null
+        * Price decimal(9,2) not null default 0
+        * Unit nvarchar(10) not null default 'Each'
+        * PhotoPath nvarchar(255)
+        * Active bit not null default 1
+    * Requests
+        * UserId int not null
+        * Description nvarchar(80)
+        * Justification nvarchar(80)
+        * RejectionReason nvarchar(80)
+        * DeliveryMode nvarchar(30) default 'Pickup'
+        * ReviewDate datetime not null default getdate()
+        * Status not null default 'NEW' 
+            check (Status in ('NEW','REVIEW','APPROVED','REJECTED'))
+        * Total decimal(11,2) not null default 0
+        * Active bit not null default 1
+    * RequestLines
+        * ProductId int not null
+        * RequestId int not null
+        * Quantity int not null default 1
     
 * functions
 * procedures
