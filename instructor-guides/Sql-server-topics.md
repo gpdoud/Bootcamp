@@ -93,7 +93,56 @@
         * Quantity int not null default 1
     
 * functions
-* procedures
+    * aggregate
+        * avg
+        * count
+        * min & max
+        * sum
+    * conversion
+        * convert
+        * parse // parse(123.45 as money using 'en-US')
+    * cursor
+        * @@FETCH_STATUS // 0 success
+    * dates
+        * DATEADD(d, 1, GETDATE())
+        * DATEDIFF(d, date1, date2)
+        * DATEFROMPARTS(1957, 8, 27)
+        * DATENAME(year, '1957-08-27') // returns string
+        * DATEPART(year, '1957-08-27') // returns int
+        * YEAR, MONTH, DAY
+    * logical
+        * IIF(cond, true, false)
+    * string
+        * CONCAT(str1, str2, ...)
+        * FORMAT(value, format, [culture])
+            * 'C'/'c' : Currency
+            * 'D'/'d' : Decimal
+            * 'G'/'g' : General
+            * 'N'/'n' : Number
+            * 'P'/'p' : Percent
+        * LEFT(str, 5), RIGHT(str, 5)
+        * LEN(str)
+        * LOWER(str), UPPER(str) // case
+        * LTRIM(str), TRIM(str), RTRIM(str)
+        * REPLACE(str, from, to)
+        * SPACE(cnt) // spaces
+        * STR(nbr, [ length [, decimals ] ])
+        * SUBSTRING(str, start, len)
+    * system
+        * @@ERROR // returns last error
+        * @@IDENTITY // returns last generated identity value
+        * @@ROWCOUNT // returns nbr rows affected
+        * ISNULL(value, replacementIfNull)
+    * user-defined
+
+* procedures (https://docs.microsoft.com/en-us/sql/t-sql/language-elements/use-transact-sql?view=sql-server-2017)
     * @@ROWCOUNT : rows affected by last operation
     * go
+    * control flow
+    * cursors
+    * expressions
+    * operators
+    * transactions
+    * variables
+
 * system tables
