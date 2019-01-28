@@ -1,5 +1,14 @@
 # SQL Server Topics
 
+* SELECT
+    * column list | *
+    * FROM tablename { alias }
+    * { LEFT | RIGHT } JOIN tablenam ON condition
+    * WHERE condition
+    * GROUP BY col1, col2, ..
+    * HAVING condition
+    * ORDER BY col1 { asc | desc }, col2 { asc | desc}
+
 * NULL - absence of value
     * default for all columns
     * test for : is null, is not null
@@ -69,7 +78,7 @@
         * IsPreferred bit not null default 1
         * Active bit not null default 1
     * Products
-        * VendorId int not null
+        * VendorId int not null FK
         * PartNumber nvarchar(30) not null
         * Name nvarchar(30) not null
         * Price decimal(9,2) not null default 0
@@ -77,19 +86,19 @@
         * PhotoPath nvarchar(255)
         * Active bit not null default 1
     * Requests
-        * UserId int not null
+        * UsersId int not null FK
         * Description nvarchar(80)
         * Justification nvarchar(80)
         * RejectionReason nvarchar(80)
         * DeliveryMode nvarchar(30) default 'Pickup'
         * ReviewDate datetime not null default getdate()
-        * Status not null default 'NEW' 
+        * Status nvarchar(10) not null default 'NEW' 
             check (Status in ('NEW','REVIEW','APPROVED','REJECTED'))
         * Total decimal(11,2) not null default 0
         * Active bit not null default 1
     * RequestLines
-        * ProductId int not null
-        * RequestId int not null
+        * ProductsId int not null FK
+        * RequestsId int not null FK
         * Quantity int not null default 1
     
 * functions
@@ -139,10 +148,49 @@
     * @@ROWCOUNT : rows affected by last operation
     * go
     * control flow
+        * BEGIN .. END
+        * BREAK
+        * CONTINUE
+        * GOTO
+        * IF .. { ELSE }
+        * RETURN { int }
+        * THROW { errornbr, errormsg, errorstate }
+        * TRY .. CATCH // BEGIN TRY .. END TRY BEGIN CATCH .. END CATCH
+        * WHILE
     * cursors
+        * CLOSE
+        * DEALLOCATE
+        * DECLARE CURSOR
+        * FETCH
+        * OPEN
     * expressions
+        * CASE // CASE @var WHEN @var = 1 THEN 'a'
     * operators
+        * UNION
+        * = (assignment)
+        * > (GT), < (LT), >= (GTE), <= (LTE), != (NE), !> (NGE), !< (NLT)
+        * + (str concat)
+        * BETWEEN 
+        * EXISTS
+        * IN // in (val1, val2, ..)
+        * LIKE
+        * AND, OR, NOT
+        * ALL, ANY
     * transactions
+        * BEGIN { TRAN | TRANSACTION } { name }
+        * COMMIT { WORK }
+        * ROLLBACK { WORK }
     * variables
+        * DECLARE @var type { = val }
+        * SET @var = val
+    * EXEC { UTE } { sproc }
+    * PRINT str
 
 * system tables
+    * master // all system information for SQL Server
+    * model // template for all new databases
+    * msdb // used for alerts and jobs
+    * tempdb // holds temp and objects and result sets
+    * INFORMATION_SCHEMA // master db views
+        * tables
+        * columns
