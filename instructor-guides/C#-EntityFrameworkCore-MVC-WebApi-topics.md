@@ -1,7 +1,16 @@
 # C#, EntityFrameworkCore, MVC, WebApi
 
+* C# created 2001 with .Net Framework
+* modeled after C and Java (editorial comment)
+
 ## C#
 
+* Visual Studio
+    * create project
+    * build
+    * run { to cursor }
+    * breakpoints
+    * inspect
 * statements
     * statements end with semi-colons
     * statement blocks with {}
