@@ -3,63 +3,130 @@
 * C# created 2001 with .Net Framework
 * modeled after C and Java (editorial comment)
 
+## Core Programming
+
+* source - files with text lines of code
+* compile - translate source into object code
+* link - combine object code into program
+* build - compile and link if successful
+* debug - run program and examine contents
+* variable - name for location in memory that may contain a value
+* property - name for a variable inside a class
+* method - block of code executable by name
+* assignment - copy data into a variable
+* loop - doing a block of code multiple times
+* increment/decrement - add or subject 1 from variable
+* instantiate - create a class object
+* call - execute method
+* workstation - your development computer
+* server - computer accessed by a workstation
+* IDE - Integrated Development Environment; development tool
+
 ## C#
 
-* Visual Studio
-    * create project
-    * build
-    * run { to cursor }
-    * breakpoints
-    * inspect
-* statements
-    * statements end with semi-colons
-    * statement blocks with {}
-    * comments
-        * // comment to end of line
-        * /* .. */ multiline comments
-        * /// special docs
-    * case sensitive
-* basic program 
-    * using
-    * namespace
-    * class : contains all code
+### Ch 2 - Core C#
+
+    * Visual Studio
+        * create project
+        * build
+        * run { to cursor }
+        * breakpoints
+        * inspect
+    * statements
+        * statements end with semi-colons
+        * statement blocks with {}
+        * comments
+            * // comment to end of line
+            * /* .. */ multiline comments
+            * /// XML docs
+        * case sensitive
+    * basic program 
+        * using
+        * namespace
+        * class : contains all code
+        * Main method
+    * variables
+        * type name { = value};
+            * class variables are initialized to default values
+            * local variable must be initialized
+        * var : type inference
+        * scope : declared inside braces exists till closing brace
+    * const int x = 1; // can never change; they are static
+    * data types
+        * value types: 
+            * integers: int, long
+            * floating point: float, double, decimal
+            * boolean: bool
+            * character: char
+            * string: string
+                * @ : can us single back-slash
+                * $ : interpolation
+        * reference types
+            * strings
+            * classes
+    * program flow
+        * equality test : ==
+        * if .. else
+        * switch .. case .. default
+        * loops
+            * for(;;)
+            * while()
+            * do .. while()
+            * foreach()
+            * break
+            * continue
+            * return
+    * namespaces
+        * alias : using alias = Namespace
     * Main method
-* variables
-    * type name { = value};
-        * class variables are initialized to default values
-        * local variable must be initialized
-    * var : type inference
-    * scope : declared inside braces exists till closing brace
-* const int x = 1; // can never change; they are static
-* data types
-    * value types: 
-        * integers: int, long
-        * floating point: float, double, decimal
-        * boolean: bool
-        * character: char
-        * string: string
-            * @ : can us single back-slash
-            * $ : interpolation
-    * reference types
-* program flow
-    * equality test : ==
-    * if .. else
-    * switch .. case .. default
-    * loops
-        * for(;;)
-        * while()
-        * do .. while()
-        * foreach()
-        * break
-        * continue
-        * return
-* namespaces
-    * alias : using alias = Namespace
-* Main method
-    * must exist in one class
-    * must be static
-    * may return void or int
-    * may have string[] parameter
+        * must exist in one class
+        * must be static
+        * may return void or int
+        * may have string[] parameter
+    * Preprocessor directives
+        * define & undef
+        * if, elif, else, endif
+        * warning, error
+        * region, endregion
+        * line
+        * pragma
+    * object naming - Pascal case
+
+### Ch 3 - Objects and Types
+
+    * structs
+    * classes - most important - reference type
+        * fields
+        * properties
+            * field-backed (_id)
+            * auto implement
+        * methods
+            * overloaded
+            * optional parameters
+            * variable number of parameters
+        * constructors
+            * calling others with this
+        * static
+    * class instances with new
+    * access modifiers
+        * public
+        * private
+        * internal (default)
+    * value vs reference
+    * nullable types
+    * enum
+        * assign multiple enums with [Flags]
+    * partial classes
+    * extension methods
+        public static class PrintExt { 
+            public static void Print(this string message) { 
+                Console.WriteLine(message); 
+            }
+        }
+    * class object
+        * ToString()
+        * GetHashCode()
+        * GetType()
 
 ## EntityFrameworkCore
 ## MVC
