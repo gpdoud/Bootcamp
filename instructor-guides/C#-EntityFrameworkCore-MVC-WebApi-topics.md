@@ -127,6 +127,34 @@
         * ToString()
         * GetHashCode()
         * GetType()
+        * Equals()
+
+### Ch 4 - Object-Oriented Programming with C#
+
+    * encapsulation, inheritance, polymorphism
+    * composition
+    * inherit from one class; implement multiple interfaces
+    * virtual methods
+    * abstract classes and methods
+    * constructors of derived classes
+    * protected access modifier
+    * interfaces
+    * is & as operators
+
+### Ch 5 - Generics (creating them)
+
+### Ch 6 - Operators and Casts
+
+    * == equality check // if(boolean = true) { }
+    * + string concatenation
+    * % modulus
+    * [] indexing arrays
+    * () casting
+    * ?: ternary
+    * ?? null coalescing
+    * nullable types
+    * null conditional // string str = acct?.FirstName
+    * typeof, is, as
 
 ## EntityFrameworkCore
 ## MVC
