@@ -127,6 +127,18 @@
         * ToString()
         * GetHashCode()
         * GetType()
+        * Equals()
+
+### Ch 4 - Object-Oriented Programming with C#
+
+    * encapsulation, inheritance, polymorphism
+    * inherit from one class; implement multiple interfaces
+    * virtual methods
+    * abstract classes and methods
+    * constructors of derived classes
+    * protected access modifier
+    * interfaces
+    * is & as operators
 
 ## EntityFrameworkCore
 ## MVC
