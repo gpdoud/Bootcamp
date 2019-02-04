@@ -1,7 +1,7 @@
 # ToDo Topics
 
 ## Today
-    * SQL Assessment tomorrow
+    * SQL Assessment tomorrow 
     * ?: Ternary
     * ??: null coalescing
     * nullable types
@@ -15,11 +15,6 @@
 ## C#
     * value vs reference
     * collections
-    * VS Debugging
-    * const variables
-    * arrays 
-    * collections
-    * static
     * value vs reference
     * nullable types
     * enums
