@@ -156,6 +156,32 @@
     * null conditional // string str = acct?.FirstName
     * typeof, is, as
 
+### Ch 7 - Arrays
+    * int[] i // declare array
+    * int[] i = new int[5]; // declare and init array
+    * int[] i = { 1,2,3,4,5 }; // note semicolon after brace
+    * i.Length // size of array; for(;;);
+    * use foreach() rather than for()
+    * Savings[] savings = new Savings[2]; // arrays of class instances; must init class object
+    * Savings[0] = new Savings("Savings");
+    * int[,] matrix = new int[3, 3] { {1,2,3}, {4,5,6}, {7,8,9} };
+    * Array.Sort(arrayname);
+    * class Account : IComparable<Account> {
+        public int CompareTo(Account that) {
+            // if equal, return 0
+            // if this > that; return 1
+            // if this < that; return -1;
+            // check that for null
+        }
+      }
+
 ## EntityFrameworkCore
+
+### Ch 30 - ASP.NET Core
+
+### Ch 31 - ASP.NET Core MVC
+
+### Ch 32 - Web API
+
 ## MVC
 ## WebApi
