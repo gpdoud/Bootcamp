@@ -175,6 +175,19 @@
         }
       }
 
+### Ch 8 - Delegates, Lambdas, and Events (SKIP)
+    * Brief overview of lambda functions
+
+### Ch 9 - String & RegEx
+
+## C# to SQL
+    * using System.Data.SqlClient
+    * Connection string
+    * SqlConnection
+    * SqlCommand
+    * SqlDataReader
+
+
 ## EntityFrameworkCore
 
 ### Ch 30 - ASP.NET Core

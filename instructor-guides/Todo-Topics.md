@@ -1,10 +1,7 @@
 # ToDo Topics
 
 ## Today
-    * SQL Assessment tomorrow 
-    * ?: Ternary
-    * ??: null coalescing
-    * nullable types
+    * C# to SQL - Update & Delete
 
 ## Git/GitHub
     * git log
@@ -13,10 +10,8 @@
     * Pull Request
 
 ## C#
-    * value vs reference
     * collections
     * value vs reference
-    * nullable types
     * enums
     * extension methods
     * object.ToString()
