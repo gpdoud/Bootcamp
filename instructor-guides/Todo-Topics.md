@@ -1,7 +1,7 @@
 # ToDo Topics
 
 ## Today
-    * C# to SQL - Update & Delete
+    * Ch 9 - String & RegEx
 
 ## Git/GitHub
     * git log
@@ -14,4 +14,3 @@
     * value vs reference
     * enums
     * extension methods
-    * object.ToString()

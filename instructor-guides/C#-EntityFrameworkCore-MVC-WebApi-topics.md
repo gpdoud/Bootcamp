@@ -179,6 +179,42 @@
     * Brief overview of lambda functions
 
 ### Ch 9 - String & RegEx
+    * string class // immutable
+    * Instance methods
+        * CompareTo // Call Compare instead
+        * Contains(s) // true if this includes s
+        * EndsWith(s) // true if this ends with s
+        * Equals(s)
+        * IndexOf(s)
+        * Length // property
+        * PadLeft(n),PadRight(n,c)
+        * Replace(c1, c2)
+        * Split(s)
+        * StartsWith(s)
+        * Substring(n [,n])
+        * ToLower(), ToUpper()
+        * Trim(), TrimStart(), TrimEnd()
+    * Static methods
+        * Compare(s1, s2) // returns postive if s2 > s1
+        * Concat(s)
+        * Copy(s) // makes copy of s
+        * Equals(s1, s2)
+        * Format // {index[,alignment][:formatString]} 
+        * Join(s, s[])
+    * StringBuilder class
+
+### Ch 10 - Collections
+    * List<T> tlist = new List<T>() { t1, t2, ... }
+        * .RemoveAt(0)
+        * .Exists(t)
+        + Enhance User class with List<User>
+    * SortedList<T1,T2>  
+    * Dictionary<T1,T2> tdict = new Dictionary<T1, T2>() { [0] = "value0", [2] = "value2", ...}
+    * SortedDictionary<T1,T2>
+    * Stack<T>
+    * Queue<T>
+        * Enqueue() // adds to end of queue
+        * Dequeue() // gets from start of queue
 
 ## C# to SQL
     * using System.Data.SqlClient
