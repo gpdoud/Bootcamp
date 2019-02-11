@@ -216,21 +216,96 @@
         * Enqueue() // adds to end of queue
         * Dequeue() // gets from start of queue
 
-## C# to SQL
-    * using System.Data.SqlClient
-    * Connection string
-    * SqlConnection
-    * SqlCommand
-    * SqlDataReader
+### Ch 11 - Special Collections [SKIP]
 
+### Ch 12 - Language Integrated Query (LINQ)
+    * Query in C# like SQL
+    * Two formats:
+        * SQL-like 
+        * Method
+    * Execution delayed until accessed
+    * from clause // var linq = from x in collection
+    * where clause // where x.col equals value
+    * orderby clause // orderby x.col [descending]
+    * select x | new { c1 = col1, c2 = col2, ...}
+    * Extension methods
+        * static class // public static class classname
+        * static method // public static void methodname()
+        * this preceeds parameter // methodname(this classname var)
+    * Query operators
+        * where
+        * select
+        * orderby, thenby, orderdescending, thenbydescending
+        * join
+        * single, singleOrDefault
+        * count, sum, min, max, average
+        * ToArray(), ToList()
 
-## EntityFrameworkCore
+### Ch 13 - [SKIP]
+
+### Ch 14 - Exceptions
+    * How exceptions work
+    * Properties
+        * Message : text message
+        * HResult : number
+        * InnerException : Exception
+        * Data : custom key/value pair
+    * try .. catch { .. catch } { .. finally }
+    * catch more specific exceptions first
+    * Creating custom exceptions
+
+### Ch 15 - Asynchronous Programming [SKIP]
+
+### Ch 16 - Reflection, Metadata, and Dynamic Programming [SKIP]
+
+### Ch 17 - Managed and Unmanaged Memory [SKIP]
+
+### Ch 18 - Visual Studio 2017
+
+### Ch 19 - Libraries, Assemblies, Packages, and NuGet [SKIP]
+
+### Ch 20 - Dependency Injection [SKIP]
+
+### Ch 21 - Tasks and Parallel Programming [SKIP]
+
+### Ch 22 - Files and Streams [SKIP]
+
+### Ch 23 - Networking [SKIP]
+
+### Ch 24 - Security
+
+### Ch 25 - ADO.NET and Transactions
+
+### Ch 26 - Entity Framework Core
+
+### Ch 27 - Localizations [SKIP]
+
+### Ch 28 - Testing
+
+### Ch 29 - Tracing, Logging, And Analytics [SKIP]
 
 ### Ch 30 - ASP.NET Core
 
 ### Ch 31 - ASP.NET Core MVC
 
 ### Ch 32 - Web API
+
+### Ch 33 - Windows Apps [SKIP]
+
+### Ch 34 - Patterns with XAML Apps [SKIP]
+
+### Ch 35 - Styling Windows Apps [SKIP]
+
+### Ch 36 - Advanced Widnows Apps [SKIP]
+
+### Ch 37 - Xamarin Forms [SKIP]
+
+## C# to SQL
+    * using System.Data.SqlClient
+    * Connection string
+    * SqlConnection
+    * SqlCommand
+    * SqlDataReader
 
 ## MVC
 ## WebApi
