@@ -241,7 +241,7 @@
         * count, sum, min, max, average
         * ToArray(), ToList()
 
-### Ch 13 - [SKIP]
+### Ch 13 - Functional Programming with C# [SKIP]
 
 ### Ch 14 - Exceptions
     * How exceptions work
@@ -261,6 +261,7 @@
 ### Ch 17 - Managed and Unmanaged Memory [SKIP]
 
 ### Ch 18 - Visual Studio 2017
+    * Editions: Community, Professional, Enterprise
 
 ### Ch 19 - Libraries, Assemblies, Packages, and NuGet [SKIP]
 
@@ -288,7 +289,7 @@
 
 ### Ch 31 - ASP.NET Core MVC
 
-### Ch 32 - Web API
+### Ch 32 - Web API (Wed )
 
 ### Ch 33 - Windows Apps [SKIP]
 

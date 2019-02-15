@@ -1,6 +1,9 @@
 # ToDo Topics
 
 ## Today
+    * JAVA
+        * Interfaces
+        * Checking class (composition)
 
 ## Git/GitHub
     * git log
