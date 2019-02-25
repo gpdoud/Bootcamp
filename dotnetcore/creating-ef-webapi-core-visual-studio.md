@@ -60,9 +60,35 @@ Executing nuget actions took 629.28 ms
 Time Elapsed: 00:00:04.8226450
 ```
 
+Add support for lazy loading
+
+PM> type `install-package Microsoft.EntityFrameworkCore.Proxies`
+
+```
+Restoring packages for C:\repos\dnbc5\prs\prs-server-solution\prs-server\prs-server.csproj...
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.proxies/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.proxies/index.json 55ms
+  GET https://api.nuget.org/v3flatcontainer/microsoft.entityframeworkcore.proxies/2.2.2/microsoft.entityframeworkcore.proxies.2.2.2.nupkg
+  OK https://api.nuget.org/v3flatcontainer/microsoft.entityframeworkcore.proxies/2.2.2/microsoft.entityframeworkcore.proxies.2.2.2.nupkg 31ms
+Installing Microsoft.EntityFrameworkCore.Proxies 2.2.2.
+Installing NuGet package microsoft.entityframeworkcore.proxies 2.2.2.
+Committing restore...
+Writing lock file to disk. Path: C:\repos\dnbc5\prs\prs-server-solution\prs-server\obj\project.assets.json
+Restore completed in 2.05 sec for C:\repos\dnbc5\prs\prs-server-solution\prs-server\prs-server.csproj.
+Successfully installed 'Castle.Core 4.2.1' to prs-server
+Successfully installed 'Microsoft.EntityFrameworkCore.Proxies 2.2.2' to prs-server
+Successfully installed 'System.ComponentModel 4.3.0' to prs-server
+Successfully installed 'System.ComponentModel.Primitives 4.3.0' to prs-server
+Successfully installed 'System.ComponentModel.TypeConverter 4.3.0' to prs-server
+Successfully installed 'System.Diagnostics.TraceSource 4.3.0' to prs-server
+Executing nuget actions took 774.07 ms
+Time Elapsed: 00:00:03.0766288
+
+```
+
 Add support for disabling CORS (needed for testing with Angular)
 
-Ap PM> type `install-package Microsoft.AspNetCore.Cors`
+PM> type `install-package Microsoft.AspNetCore.Cors`
 
 ```
 Restoring packages for C:\repos\dotnetcore\vs\TestingLogRepository\TestingLogRepository\TestingLogRepository.csproj...
