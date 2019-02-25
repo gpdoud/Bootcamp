@@ -133,7 +133,10 @@ In ConfigureServices(..)
 ```
     // add SQL Server support
     var connection = @"server=localhost\sqlexpress;database=[xxx];trusted_connection=true;";
-    services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(connection));
+    services.AddDbContext<AppDbContext>(opt => {
+        opt.UseLazyLoadingProxies();
+        opt.UseSqlServer(connection);
+    });
 
     // enable CORS support
     services.AddCors();   

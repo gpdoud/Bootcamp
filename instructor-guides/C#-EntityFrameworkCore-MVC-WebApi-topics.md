@@ -273,16 +273,36 @@
 
 ### Ch 23 - Networking [SKIP]
 
-### Ch 24 - Security
+### Ch 24 - Security [SKIP]
 
-### Ch 25 - ADO.NET and Transactions
+### Ch 25 - ADO.NET and Transactions [SKIP]
 
 ### Ch 26 - Entity Framework Core
+    * Object-relational mapper (ORM)
+    * Create Console App (.Net Core)
+    * Install NuGet packages
+        * Microsoft.EntityFrameworkCore.Tools
+        * Microsoft.EntityFrameworkCore.SqlServer
+    * Add Model (Customer)
+    * Add DbContext
+        * DbSet<Customer> Customers { get; set; }
+        * protected override void OnConfiguring(DbContextOptionBuilder builder) {
+            var connStr = "server=localhost\sqlexpress;database=Xdb;trusted_connection=true;"
+            builder.UseSqlServer(connStr);
+        }
+    * Explain migrations
+    * Add-migration 'Init'
+    * Explain db update
+    * Update-Database
+    * add using System.Linq
+    * View VS2017: SQL Server Object Explorer
 
 ### Ch 27 - Localizations [SKIP]
 
 ### Ch 28 - Testing
-
+    * Can use MSTest or XUnit
+    * https://github.com/aspnet/Home/wiki/Engineering-guidelines#unit-testsand-functional-tests
+    
 ### Ch 29 - Tracing, Logging, And Analytics [SKIP]
 
 ### Ch 30 - ASP.NET Core
@@ -300,6 +320,34 @@
 ### Ch 36 - Advanced Widnows Apps [SKIP]
 
 ### Ch 37 - Xamarin Forms [SKIP]
+
+## HTML/CSS Briefing before ASP.NET
+    * HTML - Organizing your data; CSS - Styling your data
+    * The format of HTML element (tag)
+        * tag name
+        * attributes (id, class, style)
+            * values in quotes
+    * Block vs Inline
+    * An HTMl doc - <html><head><title><body>
+    * Headings - <h1>..<h6>
+    * Paragraph - <p>
+    * Span - <span>
+    * Tables - <table><tr><td>
+    * Lists - <ul><ol><li>
+    * Horizontal Rule - <hr>
+    * Break - <br>
+    * Anchor - <a>
+    * Div - <div>
+    * Header - <header>
+    * Footer - <footer>
+    * Image - <img>
+    * Button - <button>
+    * Input - <input>
+    * Label - <label>
+    * Navigation - <nav>
+    * Drop-down list - <select><option>
+    * Section - <section>
+
 
 ## C# to SQL
     * using System.Data.SqlClient
