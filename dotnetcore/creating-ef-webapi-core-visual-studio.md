@@ -112,7 +112,7 @@ Add attributes to model properties. Most common are:
 
     * StringLength(xx)
     * Required
-    * Unique(name = "IDX_IndexName", IsUnique = true)
+
 
 Create AppDbContext.
 
@@ -122,6 +122,13 @@ public AppDbContext : DbContext {
 
     public DbSet<[Model1]> [Model1s] { get; set; }
     public DbSet<[Model2]> [Model2s] { get; set; }
+
+    protected override void OnCreating(DbOptionBulder builder) {
+        // for creating an (unique) index
+        builder.Entry(User)
+            .HasIndex(u => u.Username).
+            .IsUnique();
+    }
     ...
 }
 ```
