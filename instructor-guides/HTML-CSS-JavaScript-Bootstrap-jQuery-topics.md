@@ -1,5 +1,4 @@
 # HTML/CSS/Javascript/Bootstrap/jQuery
-
 ## HTML/CSS
     * HTML - Organizing your data; CSS - Styling your data
     * The format of HTML element (tag)
@@ -84,10 +83,14 @@
         * concat("first", "second")
         * trim() // trims begin and end
         * split("delim") // to array
-    * dates
-        * new Date()
-        * .toISOString()
-    * == vs ===
+    * statements
+        * if
+        * while
+        * do .. while
+        * for(;;)
+        * for(of)
+        * switch
+        * == vs ===
     * functions
         * no var in parameters
         * optional return
@@ -102,6 +105,9 @@
         console.log(a, b);
     }
 ```
+    * dates
+        * new Date()
+        * .toISOString() // in UTC
     * arrays
         * defined with []
         * indexed zero-based
@@ -118,6 +124,10 @@
     * events
         * onClick
         * onLoad
+    * Math
+        * pow(a, b) // raise number to power
+        * random()
+        * Math.floor(Math.random() * 10) // 0 to 9
 
 ### HTML JS Interface
         * document
@@ -128,3 +138,58 @@
             * write
         * console
             * log
+
+## Bootstrap
+    * http://getbootstrap.com
+    * Usable link in QuickStart (CSS)
+    * Requires HTML5
+    * supports latest, stable versions of browsers
+        * see browserList in package.json
+    * Containers 
+        * required to use grid system; 12 horizontally
+        * fixed width (class="container")
+        * fluid (class="container-fluid") // always 100%
+    * Grid
+        * classes row & col-xx
+            * col-n where 1 <= n <= 12
+            * col-xx where nn in (omit, sm, md, lg, xl)
+        * columns are left aligned & include gutters
+            * remove with no-gutters on row
+        * horizontal alignment
+            * align-items-start, -center, -end
+        * offset-xx-n: skip some columns
+    * Content
+        * use rem vs em for relative scaling
+            * em relative to parent element
+            * rem relative to html element
+        * browser default font-size is assumed (16px)
+    * Components
+        * Buttons (class="btn btn-xxx")
+        * Tables (class="table table-xx")
+        * Table Alt (class="container", class="row", class="col")
+
+## jQuery
+    * https://jquery.com/
+    * Download > Google CDN
+    * jQuery commands format: $(selector).method()
+        * $ is jquery
+        * (selector) is normal css selector
+        * .method() function to call; can be chained
+    * Ready: $().ready(function() {});
+    * CSS: $(selector).css("css-style", "value");
+    * addClass(), removeClass(), toggleClass()
+    * append()
+    * empty()
+    * html()
+    * text()
+### AJAX with jQuery
+    * GET: $.getJSON(url).done().fail().always();
+    * POST: $.post(url, data).done().fail().always();
+    * done(function(resp) {}) 
+        * called on success 
+        * response data passed to anon func
+    * fail(function(err) {})
+        * called on failure
+        * err object passed to anon func
+    * always(function() {})
+        * always called after done or fail
