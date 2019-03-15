@@ -1,0 +1,71 @@
+# Purchase Request System (PRS)
+
+This is a guide to building the PRS system in .Net & Angular
+
+To organize the entire project, it is recommended to create a folder called `prs` in the `repos` folder. This should **not** be a repository! It is only for organizing the two parts of the project.
+
+## Back-end (C#,EF,MVC,WebApi,Sql Server)
+
+## Front-end (Angular,Typescript)
+
+At this time, the current versions of Angular is v7.1.4.
+
+### Generate the Angular project files
+
+Change directory so that the current directory is `/c/repos/prs`.
+
+From the Git Bash Shell, type:
+
+```
+ng new prs-client --routing
+```
+
+This will create the default project files including providing support for running as a single-page application (SPA) by providing routing.
+
+### Add required modules
+
+To allow the required functionality, a couple of Angular modules are required:
+
+* **FormsModule** - supports two-way binding
+* **HttpClientModule** - supports AJAX calls to back-end service
+
+Navigate to the `prs-client/src/app` folder.
+
+Edit `app.module.ts`.
+
+Add the following import statements to `app.module.ts`.
+
+```
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+```
+
+Once the import statements are added, the class names must be added to the `imports` key in the `@NgModule` decorator.
+
+*Note: The `imports` key will already contain the `BrowserModule` class name. This should remain the 1st class name in the `imports` array list. Add new module names **after** the `BrowserModule`.*
+
+```
+imports: [ FormsModule, HttpClientModule ]
+```
+
+### Options for organizing the project structure
+
+There are many ways an Angular project can be structured. There is no particular **best** way but there are two general ways to organize the files.
+
+* By *object* type - Organizing by *object* type means putting all *components* into a folder possibly with subfolder within it and doing the same of *modules*.
+
+* By *functional* type - Organizing by *functional* area means putting all the object related to *user* into a folder. This is the recommended way.
+
+### Creating folder for functional project structure
+
+The functional objects in the prs application are: *user*, *vendor*, *product*, *request*, *requestLine*. In fact, the *requestLine* could be considered part of the *request*.
+
+Create the following folders:
+
+```
+/prs-client/src/app/user
+/prs-client/src/app/vendor
+/prs-client/src/app/product
+/prs-client/src/app/request
+/prs-client/src/app/requestLine
+```
