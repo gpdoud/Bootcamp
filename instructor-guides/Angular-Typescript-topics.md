@@ -30,6 +30,7 @@
     * let vs var
     * Access modifiers: public (default), private, protected
     * Decorators: @expression (expression is a class)
+    * import statements
 ### tsconfig.json
     * tsc --init
     * continuous compiling
@@ -39,3 +40,4 @@
 
 
 ## Angular
+    * A Javascript Framework by Google
