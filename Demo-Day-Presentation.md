@@ -4,10 +4,11 @@
 
 Here is a suggested list of topics that can be presented at demo day
 
+* PRS functionality
 * Three-tier architecture
 * Technology used (C#, HTML, Angular, etc.)
-* Database tables used
-* Front-end vs Back-end and JSON Protocol
+* Database tables created
+* Front-end & Back-end communication with JSON
 
 ## Demo - A day in the life ...
 
@@ -27,4 +28,4 @@ Students can make up whatever scenario they like, but other boot camps have cons
 
     She explains the business rules that any request over $50 must be approved by her.
 
-Previous boot camps have tak 
+Previous boot camps have taken license to add a touch of humor to their presentations and demos. When it works, it keeps the audience's attention. 
