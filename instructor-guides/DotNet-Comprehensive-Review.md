@@ -239,7 +239,95 @@ A `break` statment terminates a looping statement immediately
 
 A `continue` statement ends the current loop but continues with the remaining loops
 
-### Object-oriented programming
+### Classes
+
+A class is a user-defined type. It consists of properties, methods, and constructors. Classes are how C# implements Encapsulation.
+
+Properties of a class is there the data for the class is stored and retrieved. There are many different types of data available within a class. The types of data include integers, floating points, strings, booleans, single characters, and others including a multitude of classes that are part of the .Net library.
+
+Methods of a class are the actions that operate on the properties. They may take zero or more parameters and return or may not return some object or value. The class may have more than one method with the same name as long as the set of parameters is different by type. The runtime system will pick the proper method to call by looking at the parameters passed to the call.
+
+Constructors are like special methods that sole function is to initialize an instance of a class.
+
+Classes may inherit functionality from one other class and may implement zero or more interfaces.
+
+### Interfaces
+
+An Interface is a set of methods without bodies. Classes that implement interfaces are required to declare all the interface methods within the class. The interface itself is a type just like a class is a type. 
+
+    interface iPrint {
+        void Print();
+    }
+    class Message : IPrint {
+        void Print(); // required by the interface
+        void Save();
+    }
+    IPrint message = new Message();
+
+In this example, the Message class implements the IPrint interface. That means that the class MUST have a method called Print() defined. Then, an instance of the class is created using a variable message defined by the interface. As a result, only the Print() method can be called on the message variable. Even though Save() is defined in the class, it cannot be called from message.
+
+One of the biggest advantages of interfaces is that a class may implement any number of interfaces, but may only inherit from a single class.
+
+### Abstract
+
+Abstract is a modifier typically used on the methods of classes and/or classes themselves. When applied, abstract means that the entity is incomplete and may not be used in the normal sense.
+
+An abstract method is one where the method is defined, but no implementation is done. This is used when a base class which expects to be inherited needs to call the abstract method, but the actual implementation is only relevant in a derived class.
+
+An abstract class is one where at least one method within the class is marked abstract.
+
+## Object-oriented programming
+
+Object-oriented programming (OOP) is a style of programming that reduces redundancy and isolates data and methods. C# supports OOP.
+
+There are three tenets of OOP: Encapsulation, Inheritance, and Polymorphism. Some add another tenet called Composition (or Abstraction).
+
+### Encapsulation
+
+Encapsultation is the bringing together the data and the methods that operate on that data along with isolating them both from unauthorized access. This is implemented in C# as a `class`.
+
+### Inheritance
+
+Inheritance is the creation of a new class by specifying only the differences from another class.
+
+### Polymorphism
+
+Polymorphism is the calling of the appropriage method based on the runtime type of an object. This ignores how the object was defined at compile-time.
+
+### Composition or Abstraction
+
+Composition is an alternative to inheritance. Composition is creation of a class and using another class as a property of the new class.
+
+### Inheritance vs Composition
+
+Inheritance has been part of OOP since the beginning but inheritance is not without its problems. One of the problems with inheritance is when changes are required to parent classes. Because derived classes automatically inherit properties and methods that are not private, derived classes can have properties and methods affected by changes in the base class. Consider a banking example.
+
+    // Inheritance example
+    class Account {
+        public void deposit(double amount) { .. }
+        public void withdraw(double amount) { .. }
+    }
+    class Checking : Account {
+        public void WriteCheck(int checkNbr, double Amount) { .. }
+    }
+
+The Account class defines deposit and withdraw methods that all accounts would have in common. But the Checking class, while needing to be able to deposit, cannot use withdraw because checks must be written on checking accounts to withdraw funds. But because of inheritance, the Checking class inherits withdraw. That method cannot be hidden from use though it could be overidden to disable its functionality.
+
+    // Composition example (Checking only)
+    class Checking {
+        private Account account = new Account();
+
+        public void deposit(double amount) {
+            account.deposit(amount)
+        }
+        public void WriteCheck(int checkNbr, double amount) {
+            // process checkNbr then
+            account.withdraw(amount);
+        }
+    }
+
+In the Composition example, the withdraw method from Account is not exposed from the checking class. The downside is that the deposit method must be coded in the Checking class.
+
 ## EntityFramework
 ## MVC
 ## HTML

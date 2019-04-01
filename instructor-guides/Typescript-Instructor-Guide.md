@@ -1,6 +1,4 @@
-# Angular/Typescript
-
-## Typescript
+# Typescript
     * Superset of Javascript
     * Installing: npm install {-g} typescript
     * Compile: tsc filename.ts
@@ -31,13 +29,10 @@
     * Access modifiers: public (default), private, protected
     * Decorators: @expression (expression is a class)
     * import statements
-### tsconfig.json
+## tsconfig.json
     * tsc --init
     * continuous compiling
         * outDir => js
         * rootDir => ts
         * tsc -w
 
-
-## Angular
-    * A Javascript Framework by Google

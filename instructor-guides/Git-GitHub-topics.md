@@ -11,7 +11,7 @@
 * git branch branchname { -d | -D }
 * git checkout { -b } branchname
 * git log { -n }
-* git clean
+* git clean { -f } // removes unstanged file from working directory; -f : force
 * git stash
 * undoing changes
     * git reset HEAD filename // unstaging a file
