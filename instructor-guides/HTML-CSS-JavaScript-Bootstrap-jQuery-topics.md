@@ -141,8 +141,13 @@
 
 ## Bootstrap
     * http://getbootstrap.com
+    * <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     * Usable link in QuickStart (CSS)
-    * Requires HTML5
+    * Global styles:
+      * Requires HTML5
+      * Mobile first: 
+        * `<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">`
+    * Full Bootstrap support requires jQuery, Popper, and Bootstrap javascript
     * supports latest, stable versions of browsers
         * see browserList in package.json
     * Containers 
@@ -163,10 +168,23 @@
             * em relative to parent element
             * rem relative to html element
         * browser default font-size is assumed (16px)
+    * Typography
+        * for a menu:
+            * <ul> .list-inline; 
+            * <li> .list-inline-item
+        * keyboard
+            * <kbd>
     * Components
         * Buttons (class="btn btn-xxx")
+            * Can be styled as a link: btn-link
         * Tables (class="table table-xx")
+            * Color for row: table-primary
         * Table Alt (class="container", class="row", class="col")
+        * Forms
+            * add class="form-group" to divs
+    * Utilities
+        * Text: text-primary
+        
 
 ## jQuery
     * https://jquery.com/

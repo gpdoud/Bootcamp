@@ -13,8 +13,8 @@ Some information about SQL Server.
 * Result set is always rows and columns
 * All columns in a table can be NULL; even numbers, booleans, and dates
 * Comments
-    * // - to the end of the line
-    * /*  */ - everything between
+    * -- : to the end of the line
+    * /*  */ " everything between
 
 ### SELECT
 
