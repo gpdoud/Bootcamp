@@ -4,7 +4,6 @@
 * enum
 * casting
 ## M Sep 2 Labor day
-
 ## T Sep 3
 * OOP
   * Geometric shapes: quad, rect, sqr
@@ -18,41 +17,43 @@
     }
   * Employee, Manager
   * Banking
-
 ## W Sep 4
 * OOP
-## TH Sep 5
-* Exceptions
 * Interfaces
   * Dependency Injection: Multiple languages
-* delegates
-## F Sep 6
 * Exceptions
-* Interfaces
-* delegates
+  * try .. catch .. finally
+## TH Sep 5
+* Exceptions (add to banking app)
+* C# to SQL
+## F Sep 6
+* C# to SQL
 ## M Sep 9
-* % modulus
-* break & continue
-* nullable types
-* ?? null coalescing
+* MSTest
+* Test Driven Development
 ## T Sep 10
 * String methods
 * StringBuilder class
 ## W Sep 11
-* C# to SQL
-## TH Sep 12
-* C# to SQL
-## F Sep 13
 * LINQ
 * Extension methods
+## TH Sep 12
+* EntityFramework
+## F Sep 13
 * EntityFramework
 ## M Sep 16
-* EntityFramework
-## T Sep 17
 * HTML/CSS/JS
+## T Sep 17
+* JSON
 ## W Sep 18
 * MVC
 ## TH Sep 19
 * PRS BE
 ## F Sep 20
 * PRS BE
+
+* % modulus
+* break & continue
+* nullable types
+* ?? null coalescing
+* delegates
