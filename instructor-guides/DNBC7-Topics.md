@@ -29,24 +29,29 @@
 ## F Sep 6
 * C# to SQL
 ## M Sep 9
+AM
+* C# to SQL
+PM
 * MSTest
+  * Expected vs Actual results
+  * Domain - all possible inputs
+  * EndPoints (always includes zero)
 * Test Driven Development
 ## T Sep 10
-* String methods
-* StringBuilder class
-## W Sep 11
 * LINQ
 * Extension methods
+## W Sep 11
+* EntityFramework
 ## TH Sep 12
 * EntityFramework
 ## F Sep 13
-* EntityFramework
+* HTML/CSS/JS/JSON
 ## M Sep 16
-* HTML/CSS/JS
+* HTML/CSS/JS/JSON
 ## T Sep 17
-* JSON
-## W Sep 18
 * MVC
+## W Sep 18
+* PRS BE
 ## TH Sep 19
 * PRS BE
 ## F Sep 20

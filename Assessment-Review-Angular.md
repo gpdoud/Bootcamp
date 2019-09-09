@@ -1,4 +1,4 @@
-# Assessment Stugy Guide - Angular/Typescript
+# Assessment Study Guide - Angular/Typescript
 
 Know the purpose and use of the _app.module.ts_ and _app-routing.module.ts_
 
