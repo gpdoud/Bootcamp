@@ -39,10 +39,46 @@ PM
 * Test Driven Development
 ## T Sep 10
 * LINQ
+  * Query vs Method syntax
+```
+var rs = from i in ints
+            where i % 2 == 0
+            select i;
+
+var rs = ints.Where(i => i % 2 == 1);
+
+var users = from User user in UserList
+            where user.IsAdmin
+            orderby user.Lastname descending
+            select user;
+
+var join = from o in orders
+           join c in customers
+            on o.CustomerId equals c.Id
+           select new {
+             Customer = c.Name,
+             Order = o.Description,
+             Date = o.Date,
+             Total = o.Total
+           };
+```
+  * Lamdas
 * Extension methods
 ## W Sep 11
 * EntityFramework
-## TH Sep 12
+```  
+install-package Microsoft.EntityFrameworkCore.Tools
+install-package Microsoft.EntityFrameworkCore.Design
+install-package Microsoft.EntityFrameworkCore.SqlServer
+install-package Microsoft.EntityFrameworkCore.Proxies
+install-package Microsoft.AspNetCore.Cors
+
+scaffold-dbcontext [connStr] [provider] -DataAnnotations
+[connStr] = "server=localhost\sqlexpress;database=PrdDb7;trusted_connection=true;"
+[provider] - Microsoft.EntityFrameworkCore.SqlServer
+```
+  * Add optionsBuilder.UseLazyLoadingProxies() before SqlServer in DbContext
+## TH Sep 1
 * EntityFramework
 ## F Sep 13
 * HTML/CSS/JS/JSON
