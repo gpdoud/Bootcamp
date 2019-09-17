@@ -83,18 +83,16 @@ scaffold-dbcontext [connStr] [provider] -DataAnnotations
 ## F Sep 13
 * HTML/CSS/JS/JSON
 ## M Sep 16
-* HTML/CSS/JS/JSON
+* PRS BE
 ## T Sep 17
-* MVC
+* PRS BE
 ## W Sep 18
-* PRS BE
+* Customer Day
 ## TH Sep 19
-* PRS BE
+* Customer Day
 ## F Sep 20
 * PRS BE
+* MVC
 
-* % modulus
-* break & continue
-* nullable types
-* ?? null coalescing
 * delegates
+* reflection
