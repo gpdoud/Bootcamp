@@ -4,7 +4,7 @@ Things to do:
 
   1) Describe the technology used (C#, MVC, EF, NG, TS, SQL)
   2) Describe the layered architecture (fe, be, sql)
-  3) Describe the major tech features (security, ref integrity)
+  3) Describe the major tech features at a high level (security, ref integrity, unique column values)
   4) Describe the major bus features (users, vendors, products, purchaseRequests)
   5) Describe bus flow (create pr, create lines, set review, review, approve, reject)
   6) Demo "Day in the life"
