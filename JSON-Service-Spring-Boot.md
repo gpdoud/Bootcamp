@@ -26,19 +26,19 @@ To create the project, select *File > New > Other*. Scroll down to find *Spring 
 
 ## Add application.properties
 
-1. Auto create the database
+1. Auto create and update the database
 
-    `spring.jpa.hibernate.ddl-auto=none`
+    `spring.jpa.hibernate.ddl-auto=update`
 
-2. MySql DB connection string and authorization`
-
-    `spring.datasource.url=jdbc:mysql://localhost:3306/prs?allowPublicKeyRetrieval=true&useSSL=false`
-    `spring.datasource.username=prs_user`
-    `spring.datasource.password=sesame`
-
-3. How variable names are parsed
+2. How variable names are parsed
 
     `spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl`
+
+3. MySql DB connection string and authorization`
+
+    `spring.datasource.url=jdbc:mysql://localhost:3306/prsdb`
+    `spring.datasource.username=root`
+    `spring.datasource.password=root`
 
 ## Create package names
 
@@ -91,7 +91,7 @@ import com.maxtrain.prs.util.JsonResponse;
 @CrossOrigin
 @Controller
 @RequestMapping(path="/Users")
-public class UserController extends BaseController {
+public class UserController {
 
     @Autowired
     private UserRepository userRepository;
@@ -151,5 +151,7 @@ public class JsonResponse {
     // getters & setters
 }
 ```
+
+## Manually create database name
 
 ## Run as Spring-boot
