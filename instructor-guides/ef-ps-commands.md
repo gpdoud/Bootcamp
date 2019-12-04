@@ -1,6 +1,6 @@
 # EntityFrameworkCore Powershell Commands
 
-## add-migration
+## Add-Migration
 
 Adds a new migration
 
@@ -11,7 +11,7 @@ Example: `add-migration 'initialization'`
 | -Name | string | Yes | The name of the Migration |
 | -OutputDir | string | - | Defaults to 'Migrations' |
 
-## drop-database
+## Drop-Database
 
 Drops the database
 
@@ -27,7 +27,7 @@ Gets information about the AppDbContext
 
 Example: `get-dbcontext'
 
-## remove-migration
+## Remove-Migration
 
 Deletes the last migration and rolls back the database.
 
@@ -37,7 +37,7 @@ Example: `remove-migration`
 | ----- | ---- | ---------- | ----- |
 | -Force | - | - | Reverts the migration and rolls back the database |
 
-## scaffold-dbcontext
+## Scaffold-DbContext
 
 Generates an AppDbContext from an existing database. Note: tables must have primary keys
 
@@ -56,7 +56,7 @@ Example: `scaffold-dbcontext`
 | -UseDatabaseNames | - | - | User exact names from database tables |
 | -Force | - | - | Overright existing files |
 
-## script-migration
+## Script-Migration
 
 Creates a SQL script to effect the migration
 
@@ -69,7 +69,7 @@ Example: `script-migration`
 | -Idempotent | - | - | Creates script that can be run irrespective of current migration |
 | -Output | string | - | Output file to write script to |
 
-## update-database
+## Update-Database
 
 Creates a SQL script to effect the migration
 
