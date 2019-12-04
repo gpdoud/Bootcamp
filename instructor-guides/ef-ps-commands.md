@@ -25,7 +25,7 @@ Example: `drop-migration`
 
 Gets information about the AppDbContext
 
-Example: `get-dbcontext'
+Example: `get-dbcontext {-Force}`
 
 ## Remove-Migration
 
@@ -41,7 +41,7 @@ Example: `remove-migration`
 
 Generates an AppDbContext from an existing database. Note: tables must have primary keys
 
-Example: `scaffold-dbcontext`
+Example: `scaffold-dbcontext "server=localhost\sqlexpress;database=AppDb;trusted_connection=true;" Microsoft.EntityFrameworkCore.SqlServer {-OutputDir Models} {-ContextDir Models} {-Context AppDbContext} {-Tables "user", "address"}`
 
 | Parms | Type | Positional | Notes |
 | ----- | ---- | ---------- | ----- |
@@ -60,7 +60,7 @@ Example: `scaffold-dbcontext`
 
 Creates a SQL script to effect the migration
 
-Example: `script-migration`
+Example: `script-migration {-From init} {-To lastMigration} {-Output migration.sql}`
 
 | Parms | Type | Positional | Notes |
 | ----- | ---- | ---------- | ----- |
@@ -73,7 +73,7 @@ Example: `script-migration`
 
 Creates a SQL script to effect the migration
 
-Example: `update-migration`
+Example: `update-migration {-Migration 0 | aMigration}`
 
 | Parms | Type | Positional | Notes |
 | ----- | ---- | ---------- | ----- |
