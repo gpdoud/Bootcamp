@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Capitalized Words</title>
+    <script lang="Javascript">
+        let output = () => {
+
+            let ctrl = document.getElementById("out");
+            let words = "xsbvbEP, ORoeYYb, HsMBQeL, eVHlOEq, EwsXwTH";
+            let wordArray = words.split(", ");
+            for(let word of wordArray) {
+                word = word.toLowerCase();
+                word = word.charAt(0).toUpperCase() + word.substring(1);
+                ctrl.innerHTML += `<p>${word}</p>`;
+            }
+            
+        }
+    </script>
+</head>
+
+<body onload="output()">
+    <label id="out"></label>
+</body>
+
+</html>
