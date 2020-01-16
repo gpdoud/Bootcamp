@@ -195,7 +195,8 @@
         * .method() function to call; can be chained
     * Ready: $().ready(function() {});
     * CSS: $(selector).css("css-style", "value");
-    * addClass(), removeClass(), toggleClass()
+    * addClass(), hasClass() ,removeClass(), toggleClass()
+    * attr(), removeAttr
     * append()
     * empty()
     * html()
