@@ -1,0 +1,46 @@
+# ActionResults from Controller Methods
+## ActionResult
+- ContentResult*
+- EmptyResult*
+- FileResult
+- ForbidResult
+- JsonResult*
+- LocalRedirectResult
+- ObjectResult
+  - AcceptedAtActionResult*
+  - AcceptedAtRouteResult
+  - AcceptedResult
+  - BadRequestObjectResult
+  - ConflictObjectResult
+  - CreatedAtActionResult
+  - CreatedResult*
+  - NotFoundObjectResult*
+  - OkObjectResult*
+  - UnauthorizedObjectResult
+  - UnprocessableEntityObjectResult
+  - BadRequestErrorMessageResult
+  - ExceptionResult*
+  - InvalidModelStateResult
+  - NegotiatedContentResult<T>
+  - ResponseMessageResult*
+- PartialViewResult
+- RedirectResult
+- RedirectToActionResult
+- RedirectToPageResult
+- RedirectToRouteResult
+- SignInResult (AuthenticationManager)
+- SignOutResult (AuthenticationManager)
+- StatusCodeResult
+  - BadResultResult
+  - ConflictResult
+  - NoContentResult*
+  - NotFoundResult*
+  - OkResult*
+  - UnauthorizedResult*
+  - UnprocessableEntityResult
+  - UnsupportedMediaTypeResult
+  - ConflictResult
+  - InternalServerErrorResult (500)
+- ViewComponentResult
+- ViewResult
+- PageResult

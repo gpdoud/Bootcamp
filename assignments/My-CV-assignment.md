@@ -1,6 +1,6 @@
 # MyCV HTML
 
-Your task is to create your resume in a web page using only HTML
+Your task is to create your resume in a web page using only HTML/CSS
 
 It should have the following sections:
 
@@ -28,4 +28,4 @@ It should have the following sections:
 
 It should be organized just like your printed resume.
 
-Because no CSS will be used, the concern is only to layout the information relative to all other information. Meaning the contact info should be first followed by the technology list.
+Be prepared to show your page and a printed resume at Saturday afternoon's session.
