@@ -29,16 +29,14 @@ To create the project, select *File > New > Other*. Scroll down to find *Spring 
 1. Auto create the database
 
     `spring.jpa.hibernate.ddl-auto=none`
+    `spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl`
 
 2. MySql DB connection string and authorization`
 
-    `spring.datasource.url=jdbc:mysql://localhost:3306/prs?allowPublicKeyRetrieval=true&useSSL=false`
-    `spring.datasource.username=prs_user`
-    `spring.datasource.password=sesame`
+    `spring.datasource.url=jdbc:mysql://localhost:3306/prs?serverTimezone=UTC`
+    `spring.datasource.username=root`
+    `spring.datasource.password=root`
 
-3. How variable names are parsed
-
-    `spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl`
 
 ## Create package names
 
