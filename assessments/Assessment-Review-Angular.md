@@ -2,6 +2,8 @@
 
 Know the purpose and use of the _app.module.ts_ and _app-routing.module.ts_
 
+Know what is required to add components to the app.module.ts
+
 Know the proper way to generate components, the syntax and how they use services
 
 Know the unique features of services and why they are used to make the calls to the back-end
@@ -9,8 +11,6 @@ Know the unique features of services and why they are used to make the calls to 
 Know the decorator names of the component, service, and pipe
 
 Know the directives *ngIf, *ngFor, *ngSwitch, one-way binding and two-way binding and how to use each one
-
-Know what is required to add components to the app.module.ts
 
 Know the purpose and the use of _pipes_
 

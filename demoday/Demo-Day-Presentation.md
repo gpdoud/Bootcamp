@@ -5,9 +5,14 @@
 Here is a suggested list of topics that can be presented at demo day
 
 * PRS functionality
-* Three-tier architecture
+  * Source Control Management with Git/GitHub
+  * User authentication and authorization
+  * Future PO generation for vendors
+  * Automated busienss rules: requests totaling <= $50 auto approved
+  * Request reviewed by reviewers and not self
+* Three-tier architecture (front-end, back-end, data store)
 * Technology used (C#, HTML, Angular, etc.)
-* Database tables created
+* Database tables and relationships
 * Front-end & Back-end communication with JSON
 
 ## Demo - A day in the life ...

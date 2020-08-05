@@ -28,9 +28,15 @@ To create the project, select *File > New > Other*. Scroll down to find *Spring 
 
 1. Auto create and update the database
 
+    `spring.jpa.hibernate.ddl-auto=none`
+    `spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl`
     `spring.jpa.hibernate.ddl-auto=update`
 
 2. How variable names are parsed
+
+    `spring.datasource.url=jdbc:mysql://localhost:3306/prs?serverTimezone=UTC`
+    `spring.datasource.username=root`
+    `spring.datasource.password=root`
 
     `spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl`
 
