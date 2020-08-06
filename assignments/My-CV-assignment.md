@@ -27,5 +27,3 @@ It should have the following sections:
     * Graduation year
 
 It should be organized just like your printed resume.
-
-Be prepared to show your page and a printed resume at Saturday afternoon's session.
