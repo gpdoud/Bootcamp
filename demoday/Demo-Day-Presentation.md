@@ -8,7 +8,7 @@ Here is a suggested list of topics that can be presented at demo day
   * Source Control Management with Git/GitHub
   * User authentication and authorization
   * Future PO generation for vendors
-  * Automated busienss rules: requests totaling <= $50 auto approved
+  * Automated business rules: requests totaling <= $50 auto approved
   * Request reviewed by reviewers and not self
 * Three-tier architecture (front-end, back-end, data store)
 * Technology used (C#, HTML, Angular, etc.)
