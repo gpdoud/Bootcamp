@@ -1,4 +1,4 @@
-# Capstone - Front-end (v1.3)
+# Capstone - Front-end (v1.4)
 
 This is a guide book on how to build the front-end, capstone project. It will not be a step-by-step tutorial but a general guide of which Angular objects to create in what order.
 
@@ -45,7 +45,7 @@ This is a guide book on how to build the front-end, capstone project. It will no
 
 ## Routing
 
-1. To the `app-routing.module.ts`, add the imports and decorator values for the `home`, `about`, and `e404` components.
+1. To the `app-routing.module.ts`, add the imports and routes for the `home`, `about`, and `e404` components.
 
 0. Fill the `routes` array with the special first and last route paths. Navigate to these component with these routes:
     - The path `/home` navigates to the `home` component
