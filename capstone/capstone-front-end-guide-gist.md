@@ -1,4 +1,4 @@
-# Capstone - Front-end
+# Capstone - Front-end (v1.4)
 
 This is a guide book on how to build the front-end, capstone project. It will not be a step-by-step tutorial but a general guide of which Angular objects to create in what order.
 
@@ -21,7 +21,7 @@ This is a guide book on how to build the front-end, capstone project. It will no
 
 0. Using the **cli**, generate _components_ in the `core` folder for: `home`, `about`, `e404`.
 
-0. Using the **cli**, generate the `system.service.ts` service. (_This will be used to share the logged in user with all components_)
+0. Using the **cli**, generate the `system.service.ts` service in the `core` folder. (_This will be used to share the logged in user with all components_)
 
 ## Menu
 
@@ -45,7 +45,7 @@ This is a guide book on how to build the front-end, capstone project. It will no
 
 ## Routing
 
-1. To the `app-routing.module.ts`, add the imports and decorator values for the `home`, `about`, and `e404` components.
+1. To the `app-routing.module.ts`, add the imports and routes for the `home`, `about`, and `e404` components.
 
 0. Fill the `routes` array with the special first and last route paths. Navigate to these component with these routes:
     - The path `/home` navigates to the `home` component
@@ -109,6 +109,15 @@ This is a guide book on how to build the front-end, capstone project. It will no
 
 > This section displays additional objects beyond the standard objects that need to be added to complete the capstone
 
+### Sort
+
+1. Generate the `sort.pipe.ts`.
+
+    - This pipe should be generated in the `core` folder and will providing sorting of the list pages by clicking on some of the column headings. It can be used for all list components.
+    - The first time a column is clicked, that column data is sorted in ascending sequence.
+    - If the same column is clicked again, the same column data is sorted but in descending sequence. Every time the same column is clicked, the order of the sort on the column is reversed
+    - When a different column is clicked, the data is sorted by that column value is ascending sequence.
+
 ### User
 
 1. Add a `login(username, password)` function to the `user.service.ts`
@@ -123,6 +132,11 @@ This is a guide book on how to build the front-end, capstone project. It will no
     - Call the `Login` service function passing the username and password
         - If found, returns the user instance which is stored in a property in the `system.service.ts` then navigates to the `request-list` component.
         - If not found, returns a 404 error and the the page remains on the `user-login.component`.
+
+0. Generate the user-search pipe
+
+    - This will be generated in the `user` folder.
+    - This pipe will be added to the `user-list.component.html` to allow the user to do an incremental search on the list of users.
 
 ### Vendor
 
