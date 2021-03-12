@@ -1,6 +1,8 @@
-# Car deals Ef/WebApi/Server
+# Dealer Car Ef/WebApi/Server
 
-Create a Asp.Net Ef WebApi server for car dealers
+Create a Asp.Net Ef WebApi server for car dealers. This project is the same type of project as the PRS back-end project. Testing should be done with Postman for all controller methods.
+
+When complete, push the work to your GitHub account and send me that URL to the project via a DM Slack message.
 
 ## Dealer Table
 
@@ -25,13 +27,16 @@ Notes:
 
 ### Methods: (other than generated methods)
 
-* 
+* IncrementCount(DealerId) - Increases the CarCount property for the dealer.
+* DecrementCount(DealerId) - Decreases the CarCount property for the dealer.
 
 ## Car Table
 
 The `Car` table provides these functions:
 
-1. 
+1. Identifies each car available from the dealer
+2. Keeps a status about each car
+3. Records each cars' purchase price, sale price, and calculated profit
 
 | Name        | Type    | Null | Len | Unique | PK  | FK  | Def | Gen | Notes |
 | ----        | ----    | ---- | --- | ------ | --- | --- | --- | --- | ----- |
