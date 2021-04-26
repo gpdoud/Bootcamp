@@ -1,4 +1,4 @@
 {
-    "editor.fontFamily": "Firacode, Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "Cascadia Code, Firacode, Consolas, 'Courier New', monospace",
     "liveServer.settings.port": 5500
 }
