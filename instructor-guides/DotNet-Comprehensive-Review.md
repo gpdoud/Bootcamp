@@ -3,6 +3,11 @@
 What this is ...
 
 ## Git/GitHub
+
+* Initialize a folder as a Git repository
+* Staging files
+* Doing a commit
+
 ## SQL Server
 
 Some information about SQL Server.
