@@ -7,7 +7,7 @@ These are topics in SQL that you should know for the assessment:
 ```
 Display all rows and columns from a table and sort by a column in that table
 
-Display all columns from a table but only those rows where a column contains either A or B or C
+Display all columns from a table but only those rows where a column contains either A or B or C (Hint: IN operator)
 
 A valid join of two tables
 ```
@@ -24,4 +24,4 @@ A valid join of two tables
 
 * Know the effects of executing UPDATE or DELETE
 
-* Know the function that will take two or more strings, join them together, and return one string 
+* Know how to take two or more string columns, join them together, and return a single string column in the result set.
