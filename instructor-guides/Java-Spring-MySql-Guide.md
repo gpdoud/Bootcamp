@@ -92,15 +92,17 @@ The controller is the heart of the system. It defines the routing from a browser
     import Prs.UserRepository;
     import Prs.User;
 
-    @Controller
+    @CrossOrigin
+    @RestController
     @RequestMapping("/api/Users")
     public class UserController {
         @Autowired 
         private UserRepository userRepository;
 
         @GetMapping("/List")
-        public @RequestBody Iterable<User> GetAllUsers() {
-            return userRepository.findAll();
+        public ResponseEntity<Iterable<User>> GetAllUsers() {
+            var users = userRepository.findAll();
+            return new ResponseEntity<Iterable<User>>(users, HttpStatus.Ok);
         }
     }
 
