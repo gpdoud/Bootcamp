@@ -42,6 +42,15 @@ A. SELECT *
             Where State = 'IN'
     )
 
+Q. Display all customer names and a count of the number of orders
+    and order by the number of orders descending
+A. SELECT c.Name as 'Customer', count(*) as 'Orders'
+    From Customers c
+    Left Join Orders o
+        On o.CustomerId = c.Id
+    Group by c.name
+    Order by Orders desc
+
 Q. Display total customer sales by State but only
     for the states of 'OH', 'IN', 'KY'
 A. SELECT State, SUM(Sales)
