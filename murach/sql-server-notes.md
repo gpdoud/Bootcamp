@@ -17,3 +17,9 @@ Explain to students how to navigate the Object Explorer by expanding the subcate
 Skip DETACHING A DATABASE, BACKUP, COMPATIBILITY LEVEL
 
 Creating a database diagram by adding all the tables then SSMS will format the diagram.
+
+## Chapter 3 - SELECT syntax
+
+## Chapter 4 - Inner & Outer Join Views
+
+## Chapter 5 - Group by and Having
