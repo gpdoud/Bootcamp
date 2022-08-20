@@ -31,7 +31,6 @@ SELECT AccountDescription, Count(*) LineItemCount, Sum(InvoiceLineItemAmount) Li
 	order by LineItemCount desc;
 */
 /* 5.5
-*/
 SELECT VendorName, AccountDescription, Count(*) LineItemCount, 
 		Sum(InvoiceLineItemAmount) LineItemSum
 	from Vendors v
@@ -42,3 +41,17 @@ SELECT VendorName, AccountDescription, Count(*) LineItemCount,
 	join GLAccounts g
 		on g.AccountNo = l.AccountNo
 	group by VendorName, AccountDescription
+*/
+/* 5.7
+SELECT VendorName, AccountDescription, Count(*) LineItemCount, 
+        Sum(InvoiceLineItemAmount) LineItemSum
+    From Vendors v
+    join Invoices i
+        on i.vendorID = v.vendorid
+    join InvoiceLineItems l
+        on l.InvoiceID = i.InvoiceID
+    join GLAccounts g
+        on g.AccountNo = l.AccountNo
+    group by VendorName, AccountDescription
+    order by VendorName, AccountDescription
+*/
