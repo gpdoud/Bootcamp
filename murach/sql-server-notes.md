@@ -2,7 +2,12 @@
 
 ## Chapter 1 
 
-This is an overview of all the topics that will be covered in more detail. Instructors should NOT spend too much time or covering any topic to deeply.
+This is an overview of all the topics that will be covered in more detail. Instructors should NOT spend too much time or covering any topic tset IDENTITY_INSERT TermsCopy on;
+
+insert into TermsCopy (TermsId, TermsDescription, TermsDueDays)
+    select TermsId, TermsDescription, TermsDueDays from Terms;
+
+set IDENTITY_INSERT TermsCopy off;o deeply.
 
 ## Chapter 2 - SSMS
 
@@ -25,3 +30,18 @@ Creating a database diagram by adding all the tables then SSMS will format the d
 ## Chapter 5 - Group by and Having
 
 ## Chapter 6 - Subqueries
+
+## Chapter 7 - Insert, Update, Delete
+
+### Create duplicate table
+
+```
+-- Script Create
+
+set IDENTITY_INSERT TermsCopy on;
+
+insert into TermsCopy (TermsId, TermsDescription, TermsDueDays)
+    select TermsId, TermsDescription, TermsDueDays from Terms;
+
+set IDENTITY_INSERT TermsCopy off;
+```
