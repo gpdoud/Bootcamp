@@ -23,3 +23,5 @@ Creating a database diagram by adding all the tables then SSMS will format the d
 ## Chapter 4 - Inner & Outer Join Views
 
 ## Chapter 5 - Group by and Having
+
+## Chapter 6 - Subqueries
