@@ -17,6 +17,7 @@ SELECT InvoiceNumber, InvoiceTotal
     where PaymentTotal > (
         SELECT Avg(PaymentTotal)
             from Invoices
+            where InvoiceTotal - (PaymentTotal + CreditTotal) = 0
     );
 */
 
