@@ -64,8 +64,8 @@ GO
 -- Add users
 Insert Users (Username, Password, Firstname, Lastname, IsReviewer, IsAdmin) VALUES
     ('sa', 'sa', 'Systems', 'Admin', 1, 1),
-    ('rv', 'rv', 'Systems', 'Reviewer', 1, DEFAULT),
-    ('us', 'us', 'Systems', 'User', 0, DEFAULT);
+    ('rv', 'rv', 'Systems', 'Reviewer', 1, 0),
+    ('us', 'us', 'Systems', 'User', 0, 0);
 
 -- Add vendors
 Insert Vendors (Code, Name, Address, City, State, Zip) VALUES 
@@ -74,8 +74,8 @@ Insert Vendors (Code, Name, Address, City, State, Zip) VALUES
     ('BBUY', 'BestBuy', '1 Best Buy St', 'Atlanta', 'GA', '74745');
 
 -- Add product
-Insert Products (PartNbr, Name, Price, VendorId) VALUES 
-    ('Echo', 'Echo Std', 100, (SELECT Id From Vendors Where Code = 'AMAZ')),
-    ('EchoDot', 'Echo Dot', 50, (SELECT Id From Vendors Where Code = 'AMAZ')),
-    ('EchoShow5', 'Echo Show 5', 150, (SELECT Id From Vendors Where Code = 'AMAZ')),
-    ('EchoShow8', 'Echo Show 8', 200, (SELECT Id From Vendors Where Code = 'AMAZ'));
+Insert Products (PartNbr, Name, Unit, Price, VendorId) VALUES 
+    ('Echo', 'Echo Std', 'Each', 100, (SELECT Id From Vendors Where Code = 'AMAZ')),
+    ('EchoDot', 'Echo Dot', 'Each', 50, (SELECT Id From Vendors Where Code = 'AMAZ')),
+    ('EchoShow5', 'Echo Show 5', 'Each', 150, (SELECT Id From Vendors Where Code = 'AMAZ')),
+    ('EchoShow8', 'Echo Show 8', 'Each', 200, (SELECT Id From Vendors Where Code = 'AMAZ'));

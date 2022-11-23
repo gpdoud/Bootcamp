@@ -22,7 +22,12 @@ To create the project, select *File > New > Other*. Scroll down to find *Spring 
 
 ## Configure the project
 
-## Include JPA, Web, MySql
+## Project dependencies
+- Sql
+    - Spring Data JPA, 
+    - MySql Driver,
+- Web
+    - Spring Web, 
 
 ## Add application.properties
 
