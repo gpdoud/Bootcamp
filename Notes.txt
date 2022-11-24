@@ -1,0 +1,56 @@
+Students Capstone Repos:
+
+Billy:	https://github.com/billybad05/PrsNg.git
+Caleb:	https://github.com/Zerovxv/CapStone.git
+Ian:		https://github.com/imsmith1995/PrsDb.git
+Jack:		https://github.com/Jlambert052/PRSprojNG.git
+Josh:		https://github.com/ScottTech82/AngularPRS.git
+Karl:		https://github.com/kbanksjr/PRSCapstoneFE.git
+Sam: 		https://github.com/SamSchultz98/PRSFront.git
+
+=====
+
+Printing a web page:
+
+<link href=".." rel="stylesheet" media="print">
+
+/* prints only elements
+body { visibility: hidden; }
+.print { visibility: visible; }
+.noprint { display: none; }
+
+=====
+
+<configuration>
+	<location path="." inheritInChildApplications="false">
+		<system.webServer>
+			<modules runAllManagedModulesForAllRequests="true">
+				<remove name="WebDAVModule" />
+			</modules>
+			<handlers>
+				<remove name="WebDav" />
+				<add name="aspNetCore" path="*" verb="*" modules="AspNetCoreModuleV2" resourceType="Unspecified" />
+			</handlers>
+			<aspNetCore processPath="dotnet" arguments=".\prs-server-net6-c37.dll" stdoutLogEnabled="false" stdoutLogFile=".\logs\stdout" hostingModel="outofprocess" />
+		</system.webServer>
+	</location>
+</configuration>
+
+=====
+
+    $.ajax({
+        method: "POST",
+        url: "http://localhost:61383/api/users",
+        data: JSON.stringify(user),
+        contentType: "application/json"
+    })
+        .done(res => {
+        })
+        .fail(err => {
+            console.error(err);
+        });
+
+=====
+
+Bootstrap:
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
