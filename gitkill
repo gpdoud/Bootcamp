@@ -1,0 +1,1 @@
+git -C $1 init && gitutil --path $1 --extension c37 --delete-directory
