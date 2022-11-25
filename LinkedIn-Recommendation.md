@@ -1,0 +1,5 @@
+Josh will be an excellent addition to any development staff. He really enjoys building software systems and figuring out solutions to difficult problems. He digs deep to research problem resolutions. He never gives up on problems and always tries to figure them out before asking others. He learned the SCRUM process and understood the role of a developer on a team.
+
+In class, Josh did very well. He paid close attention to all the material and finished his assignments quickly. His code was very good for someone just learning to program in SQL, C#, Java, and Angular. He asked good questions in class to deepen his knowledge of the topics.
+
+Josh will work well in any company culture. He's got a great attitude and works well individually or with others. He learned a lot about team development from the group projects done in class. He presents well and has good verbal and written communication skills.
