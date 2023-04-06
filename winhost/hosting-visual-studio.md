@@ -1,23 +1,3 @@
-# Hosting Visual Studio Projects in Winhost.com
+Available as a Gist at:
 
-## Create SQL Server DB in Winhost
-
-## Add connection string for Winhost SQL DB
-
-## Update Startup.cs
-
-## Set project to Release mode
-
-## Update-database
-
-## Create folder for project
-
-## Use IIS Manager to make folder an application
-
-## Import publish profile from Control Panel
-
-## Modify the public profile
-
-## Publish
-
-## Test access
+https://gist.github.com/gpdoud/ee45aeacab4057d85691cbb6beb09294
