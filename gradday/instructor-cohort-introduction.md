@@ -1,4 +1,4 @@
-Hi. My name is Greg Doud and I'm the Senior Instructor for this boot camp.
+Hi. My name is Greg Doud and I'm the Senior Instructor for the full time boot camp.
 
 I know that many of you are familiar with the MAXimum boot camp but for those that are not, I'll tell you a little about it.
 
