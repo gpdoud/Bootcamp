@@ -38,7 +38,9 @@ A. SELECT *
     From Orders
     Where Total > (
         SELECT AVG(Total)
-            From Orders
+            From Orders o
+            Join Customers c
+                on c.Id = o.CustomerId
             Where State = 'IN'
     )
 
