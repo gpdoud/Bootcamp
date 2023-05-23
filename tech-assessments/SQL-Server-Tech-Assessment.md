@@ -56,7 +56,9 @@ A. SELECT c.Name as 'Customer', count(*) as 'Orders'
 Q. Display total customer sales by State but only
     for the states of 'OH', 'IN', 'KY' and only for sales totals greater than 50,000
 A. SELECT State, SUM(Sales)
-    From Customer
+    From Customer c
+    Join Order o
+        Where c.Id = o.CustomerId
     Where State in ('OH', 'IN', 'KY')
     Group by State
     Having Sum(Sales) > 50,000
