@@ -38,12 +38,14 @@ A. SELECT *
     From Orders
     Where Total > (
         SELECT AVG(Total)
-            From Orders
+            From Orders o
+            Join Customers c
+                on c.Id = o.CustomerId
             Where State = 'IN'
     )
 
 Q. Display all customer names and a count of the number of orders
-    and order by the number of orders descending
+    for each customer and order by the number of orders descending
 A. SELECT c.Name as 'Customer', count(*) as 'Orders'
     From Customers c
     Left Join Orders o
@@ -52,8 +54,11 @@ A. SELECT c.Name as 'Customer', count(*) as 'Orders'
     Order by Orders desc
 
 Q. Display total customer sales by State but only
-    for the states of 'OH', 'IN', 'KY'
+    for the states of 'OH', 'IN', 'KY' and only for sales totals greater than 50,000
 A. SELECT State, SUM(Sales)
-    From Customer
+    From Customer c
+    Join Order o
+        Where c.Id = o.CustomerId
+    Where State in ('OH', 'IN', 'KY')
     Group by State
-    Having State in ('OH', 'IN', 'KY')
+    Having Sum(Sales) > 50,000
