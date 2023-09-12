@@ -24,4 +24,4 @@ A valid join of two tables
 
 * Know the effects of executing UPDATE or DELETE
 
-* Know how to take two or more string columns, join them together, and return a single string column in the result set.
+* Know how to use a function that takes two or more string columns, join them together, and return a single string column in the result set.
