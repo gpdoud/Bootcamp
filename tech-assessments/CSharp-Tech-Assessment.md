@@ -12,8 +12,8 @@ Q. What are the TWO ways of declaring an integer variable
     with an initial value of zero?
 A. int i = 0, var i = 0
 
-Q. What is the syntax to initialize a decimal variable to the value 100?
-A. `var aDecimal = 100m or 100M
+Q. What is the syntax to initialize a decimal variable to the value 100.27?
+A. `var aDecimal = 100.27m or 100.27M
 
 Q. What is required when declaring a variable with `var`?
 A. The variable must be initialized
@@ -28,14 +28,14 @@ Q. What is the syntax to check whether the value of A is equal
     to the value of B?
 A. A == B
 
-Q. What is `scope`?
+Q. What is `scope` related to variables?
 A. Defines the lifetime of a variable defined within the scope
 
 Q. What is the difference between value and reference types?
 A. Reference types can be NULL by default. Value types cannot
     be NULL by default.
 
-Q. In Net 6.x, how do you define a string variable as nullable?
+Q. In .Net 7, how do you define a string variable as nullable?
 A. `string? aString;`
 
 Q. What is the approximate range of number that an integer can hold?
@@ -73,7 +73,7 @@ Q. What are the restrictions applied to a variable that includes
 A. The variable must be initialized either at declaration time
     or within the constructor of the CLASS. After initialized,
     it cannot be changed.
-
+<start here>
 Q. What are the three types that may exist within a CLASS?
 A. Properties, Methods, Constructors
 
@@ -122,4 +122,25 @@ A. A property that exists only once within the
 
 Q. What properties and methods can be accessed by a STATIC method?
 A. Only static properties and static methods.
+
+Q. When would you be required to define a method with the 'Task'
+    type return value?
+A. When the method is async.
+
+Q. Why would a GET method in a C# WebApi app use the 'ActionResult'
+    in a return type? 
+A. So the method can return data and the HTTP Status Code (200 OK)
+    if successful and just a HTTP Status Code (404 Not Found) if not.
+
+Q. In a WebApi application, how are the different methods in different
+    controllers uniquely identified?
+A. By the combination of the HTTP Method and the URL.
+
+Q. In a 'Code First' scenario, give an example of what must be added 
+    to a model class so that Entity Framework Core can create and update 
+    a SQL table from the definition of a class?
+A. [StringLength()], [Column()], [Index()], [Table()]
+
+Q. What keyword must be added to a method call that must run asynchronously?
+A. 'await'
 
